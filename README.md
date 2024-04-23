@@ -23,3 +23,9 @@ It means that Subscriber and Publisher are connected to the same AMQP protocol, 
 ![Sending and Processing Event](image/sending%20request.png)
 
 The Publisher sends data to the message broker which is the received by the Subscriber when RabbitMQ is running and both programs (Publisher & Subscriber) are executed (using `cargo run`). As shown in the image above, the Publisher transmits the data to the message broker and the Subscriber successfully retrieves it.
+
+## Monitoring Chart Based on Publisher
+
+![Monitoring Chart Based on Publisher](image/monitor%20publisher%20chart.png)
+
+In the picture above, I attempted to increase the message rates by running the Publisher several times in quick succession. From this experiment, I observed that the message rates escalate when the Publisher frequently sends data to the message broker. High message rates indicate that the message broker is receiving a large volume of data from the Publisher.
