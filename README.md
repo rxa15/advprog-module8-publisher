@@ -17,3 +17,9 @@ It means that Subscriber and Publisher are connected to the same AMQP protocol, 
 ## Running RabbitMQ as Message Broker
 
 ![RabbitMQ as Message Broker](image/RabbitMQ.png)
+
+## Sending and Processing Event
+
+![Sending and Processing Event](image/sending%20request.png)
+
+The Publisher sends data to the message broker which is the received by the Subscriber when RabbitMQ is running and both programs (Publisher & Subscriber) are executed (using `cargo run`). As shown in the image above, the Publisher transmits the data to the message broker and the Subscriber successfully retrieves it.
